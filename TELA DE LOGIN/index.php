@@ -9,7 +9,7 @@
 <body>
 <div id="corpo-form">
     <h1>ENTRAR</h1>
-    <form method="POST" action="processa.php">
+        <form method="POST" action="processa.php">
         <input type="email" placeholder="Usuário">
         <input type="password" placeholder="senha">
         <input type="submit" placeholder="Acessar">
