@@ -9,11 +9,16 @@
 <body>
 <div id="corpo-form">
     <h1>ENTRAR</h1>
-        <form method="POST" action="processa.php">
-        <input type="email" placeholder="Usuário">
-        <input type="password" placeholder="senha">
+        <form method="POST">
+        <input type="email" placeholder="Usuário" name="email">
+        <input type="password" placeholder="senha" name="senha">
         <input type="submit" placeholder="Acessar">
+        <a href="cadastrar.php" > Ainda não e incrito?  <strong>Cadastre-se</a>
     </form>
 </div>
+<?php
+
+
+?>
 </body>
 </html>
