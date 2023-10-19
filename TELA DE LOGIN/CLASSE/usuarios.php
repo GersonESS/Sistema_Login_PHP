@@ -3,14 +3,14 @@ Class Usuario
 {
     private $pso;
     public $msgErro = "";
-    public function conectar($nome, $host, $usurio, $senha)
+    public function conectar($nome, $host, $usuario, $senha)
     {
         global $pdo; 
         try {
 
-        $pdo = new PDO("mysql:dbname=".$nome.";host=".$host,usuario,senha);
+        $pdo = new PDO("mysql:dbname=".$nome.";host=".$host,$usuario,$senha);
 
-         }  catch(PDOException $e) {
+         }  catch (PDOException $e) {
             $msErro = $e->getMessage();
          }  
     }
